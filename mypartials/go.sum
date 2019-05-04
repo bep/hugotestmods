@@ -1,3 +1,5 @@
 github.com/bep/hugotestmods v0.0.0-20190504085406-ca5c0f2dad18 h1:yyjFpylAAbshMRLzrg4qWACcxtjGKlDhOFueIcvRF9A=
+github.com/bep/hugotestmods v0.0.0-20190504090829-4afde9877151 h1:cTwsmRqU4Kn/rOHyqzpYKjJZlm4NtxP2yG/bfarzUMQ=
 github.com/bep/hugotestmods/myassets v1.0.2 h1:JrcY3bpqF832L/+Zd6ZpWdw5DgW4MhrEmVdrS//qMig=
 github.com/bep/hugotestmods/myassets v1.0.2/go.mod h1:yMlFSL9pjn6K4otaMRzPv6YlaPqXee9/t05D2/HtfTY=
+github.com/bep/hugotestmods/myassets v1.0.3/go.mod h1:yMlFSL9pjn6K4otaMRzPv6YlaPqXee9/t05D2/HtfTY=
