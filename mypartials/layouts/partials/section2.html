@@ -4,8 +4,8 @@
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
-        {{ $versionImg := resources.Get "images/module-version.png" }}
-        <h1 class="title section-title">{{ $title }}</h1>
+        {{ $versionImg := (resources.Get "images/module-version.png").Resize "50x" }}
+        <h1 class="title section-title">{{ $title }}<img src="{{ $versionImg.Permalink }}" style="margin-left:10px" /></h1>
         <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
         <div class="divider"></div>
       </div>
