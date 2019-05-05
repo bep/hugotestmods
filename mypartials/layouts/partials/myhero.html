@@ -1,19 +1,20 @@
 {{- $hero       := .Site.Params.hero }}
-{{- $title      := index $hero "title" }}
-{{- $subtitle   := index $hero "subtitle" }}
+{{- $title      := "Hugo Modules" }}
+{{- $subtitle   := `A **Hugo Module** is a tree of **Hugo Components**.` }}
 {{- $buttonText := index $hero "buttontext" }}
 {{- $buttonLink := index $hero "buttonlink" }}
 {{- $image      := index $hero "image" }}
+{{ $versionImg := (resources.Get "images/module-version.png").Resize "60x" }}
 <div class="hero-body">
   <div class="container">
     <div class="columns is-vcentered">
       <div class="column is-5 is-offset-1 landing-caption">
         <h1 class="title is-1 is-bold is-spaced">
-          {{ $title }}
+          {{ $title }} <img src="{{ $versionImg.Permalink }}"  />
         </h1>
         {{ with $subtitle }}
         <h2 class="subtitle is-5 is-muted">
-          {{ . }}
+          {{ . | markdownify }}
         </h2>
         {{ end }}
         <p>
@@ -23,7 +24,7 @@
         </p>
       </div>
       <div class="column is-5 is-offset-1">
-        <figure class="image is-4by3">
+        <figure class="image is-3by2">
           <img src="{{ "images/gopher-hero.svg" | relURL }}" alt="Description">
         </figure>
       </div>
