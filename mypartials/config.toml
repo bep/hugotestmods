@@ -3,3 +3,8 @@
 theme = [
     "github.com/bep/hugotestmods/myassets",
  ]
+
+ [params]
+ [params.navbarlogo]
+ image = "hugo-logo-wide.svg"
+ link = "https://gohugo.io"
