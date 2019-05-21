@@ -2,6 +2,7 @@
 
 theme = [
     "github.com/bep/hugotestmods/myassets",
+    "github.com/bep/hugotestmods/myv2",
  ]
 
  [params]
